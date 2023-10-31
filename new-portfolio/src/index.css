@@ -1,0 +1,66 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  }
+
+  
+  body{
+    background: hsl(200, 23%, 3%);
+  }
+
+
+
+  ::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(228, 52, 81), #000);
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    animation: scrollbar-animation 1s infinite alternate;
+}
+
+
+@keyframes scrollbar-animation {
+  0% {
+    background: linear-gradient(180deg, #000 , rgb(228, 52, 81));
+}
+
+20% {
+  background: linear-gradient(180deg, #000);
+}
+
+
+50% {
+  background: linear-gradient(180deg, rgb(228, 52, 81));
+}
+
+
+
+80% {
+  background: linear-gradient(180deg, #000 , rgb(228, 52, 81));
+}
+
+
+
+0% {
+  background: linear-gradient(180deg, #000 , rgb(228, 52, 81));
+}
+
+
+
+
+100% {
+  background: linear-gradient(180deg,  #000 , rgb(228, 52, 81));
+}
+}

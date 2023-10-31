@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    }
+
+.header{
+    background: hsl(200, 23%, 3%);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.header-navbar{
+    position: sticky;
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.navbar-port h1{
+    color: aliceblue;
+    font-size: 38px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 2px pink;
+}
+
+.navbar-port h1 span{
+    color:rgb(228, 52, 81);
+    font-size: 38px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.navbar-anchor{
+    background: hsl(200, 23%, 22%);
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+}
+.navbar-anchor ul{
+    list-style: none;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.navbar-anchor a{
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    top: 6px;
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.navbar-anchor a:hover{
+    color: rgb(228, 52, 81);
+}
+
+
+
+.navbar-links .icon{
+    color: aliceblue;
+    padding: 4px 5px;
+}
+
+.navbar-links .icon:hover{
+    color: rgb(228, 52, 81);
+}
+
+/* navbar end */
+
+
+.header-content{
+
+    padding: 100px 50px;
+}
+.row-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.heading{
+    padding: 50px 0px;
+}
+.heading h1{
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.heading h1 span{
+    color: rgb(228, 52, 81);
+    font-size: 35px;
+}
+
+.heading h3{
+    color: aliceblue;
+    font-size: 25px;
+}
+.heading p{
+    padding: 10px 5px;
+    color: aliceblue;
+    line-height: 1.2;
+}
+
+.button-content{
+    display: flex;
+    gap: 20px;
+}
+
+.button-content .hire{
+    padding: 8px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background: rgb(228, 52, 81);
+    
+}
+
+.button-content .hire:hover{
+    color: #000;
+    background-color: aliceblue;
+    transition: .6s;
+}
+
+.button-content .work{
+    padding: 8px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background:hsl(200, 23%, 22%);
+    
+}
+
+.button-content .work:hover{
+    color: #fff;
+    background-color: rgb(228, 52, 81);
+    transition: .6s;
+}
+.header-img{
+    padding: 0px 200px;
+    position: relative;
+    /* bottom: 40px; */
+}
+.header-img img{
+    width: 280px;
+    border: 10px solid hsl(202, 21%, 10%);
+    border-radius: 190px 190px 10px 10px;
+}
+
+
+.mobile-nav-btn{
+    display: none;
+    .close-outline{
+     display: none; 
+    }
+}
+
+.toggle-button{
+    display: none;
+}
+
+.mobile-nav-btn[name="close-outline"]{
+    display: none;
+}
+
+@media (max-width:1000px) , (max-width:768px) , (max-width:568px) {
+
+    .header{
+        background: hsl(200, 23%, 3%);
+        width: 100%;
+        height: 100vh;    
+    }
+
+    .navbar{
+     gap: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 150px;
+    flex-direction: column;
+    
+}
+.navbar-port h1 {
+    font-size: 20px;
+}
+.navbar-port h1 span{
+    font-size: 20px;
+}
+
+.navbar-anchor{
+    background: hsl(200, 23%, 22%);
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+    
+}
+.navbar-anchor ul{
+    list-style: none;
+    display: flex;
+    padding: 5px 10px;
+
+}
+
+.navbar-anchor a{
+    text-decoration: none;
+    padding: 20px;
+    position: relative;
+    top: 6px;
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.navbar-anchor a:hover{
+    color: rgb(228, 52, 81);
+}
+
+
+.header-content{
+    display: flex;
+    justify-content: space-around;
+}
+.row-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.heading{
+    position: relative;
+    bottom: 80px;
+}
+.heading h1{
+    font-size: 24px;
+}
+
+.heading h1 span{
+    font-size: 24px;
+}
+
+.heading h3{
+    font-size: 20px;
+}
+.heading p{
+    font-size: 12px;
+}
+
+.button-content{
+    position: relative;
+    bottom: 130px;
+}
+.button-content .hire{
+    padding: 8px 30px;
+}
+
+.button-content .work{
+    padding: 8px 30px;
+}
+.header-img{
+    position: relative;
+    right: 100px;
+    bottom: 80px;
+}
+.header-img img{
+    width: 200px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:767px) , (max-width:568px) {
+
+  
+
+    .navbar{
+     gap: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 100px;
+    flex-direction: column;
+    /* display: none; */
+}
+.navbar-port h1 {
+    font-size: 20px;
+}
+.navbar-port h1 span{
+    font-size: 20px;
+}
+
+.navbar-anchor{
+    background: hsl(200, 23%, 22%);
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+    
+}
+.navbar-anchor ul{
+    list-style: none;
+    display: flex;
+    padding: 3px 8px;
+
+}
+
+.navbar-anchor a{
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    top: 6px;
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    transition: .6s;
+    font-size: 10px;
+}
+
+.navbar-anchor a:hover{
+    color: rgb(228, 52, 81);
+}
+
+
+.heading{
+    position: relative;
+    text-align: center;    
+    
+}
+.heading h1{
+    font-size: 24px;
+    position: relative;
+    bottom: 50px;
+}
+
+.heading h1 span{
+    font-size: 24px;
+}
+
+.heading h3{
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+
+}
+.heading p{
+    font-size: 10px;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.button-content{
+    position: relative;
+    bottom: 190px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.button-content .hire{
+    padding: 8px 30px;
+}
+
+.button-content .work{
+    padding: 8px 30px;
+}
+.header-img{
+    position: relative;
+    left: 0px;
+
+    bottom: 180px;
+
+}
+.header-img img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.header-content{
+    display: grid;
+
+}
+
+}
+
+
+
+@media (max-width:475px) , (max-width:300px) {
+
+  
+
+    .navbar{
+     gap: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    flex-direction: column;
+
+    
+}
+.navbar-port h1 {
+    font-size: 20px;
+}
+.navbar-port h1 span{
+    font-size: 20px;
+}
+
+.navbar-anchor{
+    background: hsl(200, 23%, 22%);
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+}
+.navbar-anchor ul{
+    list-style: none;
+    display: flex;
+    padding: 3px 1px;
+
+}
+
+.navbar-anchor a{
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    top: 6px;
+    color: aliceblue;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    transition: .6s;
+    font-size: 8px;
+}
+
+.navbar-anchor a:hover{
+    color: rgb(228, 52, 81);
+}
+
+
+.heading{
+    position: relative;
+    text-align: center;    
+    
+}
+.heading h1{
+    font-size: 24px;
+    position: relative;
+    bottom: 50px;
+}
+
+.heading h1 span{
+    font-size: 24px;
+}
+
+.heading h3{
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+
+}
+.heading p{
+    font-size: 10px;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.button-content{
+    position: relative;
+    bottom: 190px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.button-content .hire{
+    padding: 8px 30px;
+}
+
+.button-content .work{
+    padding: 8px 30px;
+}
+.header-img{
+    position: relative;
+    left: 0px;
+
+    bottom: 180px;
+
+}
+.header-img img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.header-content{
+    display: grid;
+
+}
+
+}
+
+
+

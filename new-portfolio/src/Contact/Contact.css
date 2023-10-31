@@ -1,0 +1,175 @@
+.contact{
+    padding: 50px 20px;
+    background: hsl(200, 23%, 3%);
+}
+.contact-heading h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    gap: 40px;
+}
+
+.contact-input{
+    display: flex;
+    gap: 20px;
+}
+.contact-input input{
+    width: 300px;
+    background-color:hsl(203, 22%, 7%);
+    border: 1px solid hsl(200, 2%, 34%);
+    border-radius: 6px;
+    color: aliceblue;
+}
+
+.contact-input ::placeholder{
+    color: hsl(200, 2%, 34%);
+    padding: 0px 50px;
+    font-size: 18px;
+}
+
+.email-contact input{
+    width: 620px;
+    background-color:hsl(203, 22%, 7%);
+    border: 1px solid hsl(200, 2%, 34%);
+    border-radius: 6px;
+    color: aliceblue;
+}
+
+.email-contact ::placeholder{
+    color: hsl(200, 2%, 34%);
+    padding: 0px 50px;
+    font-size: 18px;
+}
+
+
+.email-text textarea{
+    overflow: hidden;
+    height: 200px;
+    width: 620px;
+    background-color:hsl(203, 22%, 7%);
+    border: 1px solid hsl(200, 2%, 34%);
+    border-radius: 6px;
+    color: aliceblue;
+}
+
+.email-text ::placeholder{
+    color: hsl(200, 2%, 34%);
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+
+.div-submit a{
+    padding: 5px 40px;
+    background-color: hsl(200, 2%, 34%);
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.div-submit a:hover{
+    background-color: hsl(203, 22%, 7%);
+    color: aliceblue;
+}
+
+
+
+@media (max-width:650px) , (max-width:550px){
+    .contact-input input {
+        width: 250px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+
+
+    .email-contact input {
+        width: 420px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+    .email-text textarea {
+        overflow: hidden;
+        height: 200px;
+        width: 420px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+}
+
+
+
+@media (max-width:524px) , (max-width:450px){
+    .contact-input input {
+        width: 200px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+
+
+    .email-contact input {
+        width: 320px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+    .email-text textarea {
+        overflow: hidden;
+        height: 100px;
+        width: 320px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+}
+
+
+
+
+@media (max-width:416px) , (max-width:300px){
+    .contact-input input {
+        width: 150px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+
+
+    .email-contact input {
+        width: 220px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+    .email-text textarea {
+        overflow: hidden;
+        height: 100px;
+        width: 220px;
+        background-color: hsl(203, 22%, 7%);
+        border: 1px solid hsl(200, 2%, 34%);
+        border-radius: 6px;
+        color: aliceblue;
+    }
+}
